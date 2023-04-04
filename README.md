@@ -21,4 +21,9 @@ An add instruction looks like:
 3 4 ADD
 ```
 
-It has 3 pieces, data 3, data 4, primitive operation ADD
+It has 3 pieces, data 3, data 4, primitive operation ADD, SUB, MUL, DIV
+
+## Concepts
+
+### lexing
+The action of read string from source file, and break it up into tokens.

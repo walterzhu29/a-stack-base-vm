@@ -8,8 +8,11 @@ stack-vm: stack-vm.o main.o
 main.o: main.cpp
 	$(CXX) $(CFLAGS) -c main.cpp
 
-stack-vm.o: src/stack-vm.h src/stack-vm.cpp
-	$(CXX) $(CFLAGS) -c src/stack-vm.cpp
+stack-vm.o: ../stack-vm.h ../stack-vm.cpp
+	$(CXX) $(CFLAGS) -c ../stack-vm.cpp
 
 clean:
 	rm -f *.o stack-vm
+
+make run:
+	./stack-vm
